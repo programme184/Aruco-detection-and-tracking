@@ -8,7 +8,7 @@ source ./devel/setup.sh
 roslaunch jaka_ros_driver start.launch  # 启动jaka的基本底层驱动，启动后需要等待几秒，等控制柜的灯为绿色
 rosrun control_msgs jaka5_server        # 接收从moveit中发来的ros topic，并对指令进行处理
 roslaunch jaka5_config demo.launch      # 启动moveit 同时打开rviz
-
+```
 ## 二维码标定
 
 
