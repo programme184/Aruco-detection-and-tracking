@@ -32,7 +32,7 @@ online_hand_on_eye_calib_auto.launch
 ```
 在启动该文件之前，在Home/hanglok(linux用户名)下创建output文件夹，进入文件夹后创建以下文件夹：
 
-![output.png](/home/hanglok/Pictures/output.png)
+![output.png](output.png)
 
 这部分是为了减少online_hand_on_eye_calib_auto.py的运行报错，也可根据报错内容进行添加。
 
