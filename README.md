@@ -77,6 +77,6 @@ roslaunch jaka_control aruco_maker_find.launch   #相机到达aruco码上方
       time.sleep(6)
       
 ```
-在aruco_pose.py的主循环中，修改range(0,10)可修改机械臂连续跟踪次数，也可改为无限循环。修改(p, o)可设定机械臂aruco码识别跟踪前的起始位置。
+在aruco_pose.py的main函数中，修改range(0,10)可修改机械臂连续跟踪次数，也可改为无限循环。修改(p, o)可设定机械臂aruco码识别跟踪前的起始位置。
 修改time.sleep（）可改变机械臂在完成跟踪后的停留时间。
 
