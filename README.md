@@ -62,5 +62,21 @@ roslaunch jaka_control aruco_maker_find.launch   #相机到达aruco码上方
 ```
 注意cam_ori的顺序为xyzw，与标定结果文件中四元数结果的顺序略有不同，需要稍微修改一下。
 
+```shell
+ # track the aruch code real time
+    for i in range(0, 10):
+      print('\n new epo:', i)
+      pose.detection_test()
 
+      if i == 0:
+        robot_control.pos_assume(p, o)
+      
+...
+...
+      robot_control.pos_assume(mend_p, mend_o)
+      time.sleep(6)
+      
+```
+在aruco_pose.py的主循环中，修改range(0,10)可修改机械臂连续跟踪次数，也可改为无限循环。修改(p, o)可设定机械臂aruco码识别跟踪前的起始位置。
+修改time.sleep（）可改变机械臂在完成跟踪后的停留时间。
 
